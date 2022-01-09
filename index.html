@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SVG Watch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="flex">
+            <svg width="200" height="200" viewBox="-100 -100 200 200">
+                <circle class="minute_marker" r="90" pathLength="60" />
+                <circle class="hour_marker" r="90" pathLength="60" />
+    
+                <g id="hour_hand">
+                    <line class="hand" x1="0" y1="0" x2="0" y2="-50" />
+                    <line class="hand hand--thick" x1="0" y1="-12" x2="0" y2="-50" />
+                  </g>
+            
+                  <g id="minute_hand">
+                    <line class="hand" x1="0" y1="0" x2="0" y2="-80" />
+                    <line class="hand hand--thick" x1="0" y1="-12" x2="0" y2="-80" />
+                  </g>
+            
+                  <g id="second_hand">
+                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-80" />
+                  </g>
+            </svg>
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
